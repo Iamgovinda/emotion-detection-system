@@ -7,7 +7,7 @@ def emotion_detector(base64Image):
     classifier = load_model(
         r'C:/Users/default.LAPTOP-6IMDNNN0/Documents/CodePlayground/emotion_detection/Emotion-Detection/backend/emotion_detector/detector/final_model.h5')
 
-    emotion_labels = ['Angry', '', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
+    emotion_labels = ['Angry', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
     frame = parse_base64_image(base64Image)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
